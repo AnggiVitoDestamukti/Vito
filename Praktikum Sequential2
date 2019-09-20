@@ -1,0 +1,24 @@
+package Praktikum;
+
+public class Praktikum2 {
+
+    public static void main(String[] args) {
+        int bilangan[] = new int[]{45, 95, 47, 85, 71};
+        double RataRata = 0;
+        System.out.println("Data di Array :");
+        for (int i = 0; i < bilangan.length; i++) {
+            System.out.print(bilangan[i] + "\t");
+            RataRata += bilangan[i];
+        }
+        RataRata /= bilangan.length;
+        System.out.println("\n");
+        System.out.println("Rata-rata : " + RataRata);
+        for (int i = 0; i < bilangan.length; i++) {
+            if (bilangan[i] > RataRata) {
+                int x = bilangan[i];
+                System.out.println("Nilai diatas rata-rata : " + x);
+            }
+
+        }
+    }
+}
