@@ -1,0 +1,27 @@
+package Praktikum;
+
+import java.util.Scanner;
+
+public class No1 {
+
+    public static void main(String[] args) {
+        String mencari;
+        boolean ketemu = false;
+        String[] data = new String[]{"vito", "viti", "vita", "vite", "vitu"};
+        Scanner vto = new Scanner(System.in);
+        System.out.println("Cari Data:");
+        mencari = vto.nextLine();
+        for (int i = 0; i < data.length; i++) {
+            String string = data[i];
+            if (mencari.equals(data[i])) {
+                ketemu = true;
+                break;
+            }
+        }
+        if (ketemu == true) {
+            System.out.println("Data ketemu");
+        } else {
+            System.out.println("Data Tidak Ketemu");
+        }
+    }
+}
