@@ -1,0 +1,29 @@
+package Praktikum;
+
+import java.util.Scanner;
+
+public class Praktikum1 {
+
+    public static void main(String[] args) {
+        int mencari;
+        boolean ketemu = false;
+        int[] data = new int[]{12, 12, 15, 17, 15, 13, 16, 15, 17, 13, 12, 14, 12};
+        Scanner vto = new Scanner(System.in);
+        System.out.print("Angka yang ingin anda cari : ");
+        mencari = vto.nextInt();
+        System.out.println("Data adalah : ");
+        int a = 0;
+        for (int i = 0; i < data.length; i++) {
+            System.out.println(data[i] + "\t");
+            if (mencari == data[i]) {
+                a++;
+                ketemu = true;
+            }
+        }
+        if (ketemu == true) {
+            System.out.println("Data ada :" + a);
+        } else {
+            System.out.println("Data tidak ditemukan");
+        }
+    }
+}
