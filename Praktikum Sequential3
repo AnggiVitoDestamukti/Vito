@@ -1,0 +1,19 @@
+package Praktikum;
+
+public class Praktikum3 {
+
+    public static void main(String[] args) {
+        int bilangan[] = new int[]{34, 73, 84, 56};
+        int mencari = 4;
+        System.out.println("Data di Array : ");
+        for (int i = 0; i < bilangan.length; i++) {
+            System.out.println(bilangan[i] + "\t");
+        }
+        for (int i = 0; i < bilangan.length; i++) {
+            if (bilangan[i] % 4 == 0) {
+                int y = bilangan[i];
+                System.out.println("Nilai berkelipatan 4 : " + y);
+            }
+        }
+    }
+}
